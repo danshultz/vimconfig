@@ -64,7 +64,7 @@ endif
 
 " GRB: set the color scheme
 :set t_Co=256 " 256 colors
-:color ron
+:color lucius
 
 " GRB: hide the toolbar in GUI mode
 if has("gui_running")
@@ -118,6 +118,7 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 " Open files with <leader>f
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>f :FufFile<cr>
+map <leader>fc :FufCoverageFile<cr>
 nnoremap <leader><leader> <C-^>
 
 nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
