@@ -1,4 +1,6 @@
 filetype on  " Automatically detect file types.
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
 set nocompatible  " We don't want vi compatibility.
 
 call pathogen#runtime_append_all_bundles()
@@ -25,7 +27,7 @@ map <silent> <m-n> :cn <cr>
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
  
-syntax enable
+syntax on
 " Keep more context when scrolling off the end of a buffer
 set scrolloff=3
 
@@ -120,6 +122,7 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>ff :FufFile<cr>
 map <leader>fc :FufCoverageFile<cr>
+map <leader>fb :FufBuffer<cr>
 nnoremap <leader><leader> <C-^>
 nnoremap <leader>ww <C-w><C-w>
 nnoremap <leader>wv <C-w><C-v>
