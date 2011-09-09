@@ -16,3 +16,6 @@
 [submodule "bundle/ColorSamplePack"]
 	path = bundle/ColorSamplePack
 	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
