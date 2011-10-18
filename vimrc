@@ -121,13 +121,13 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 " Open files with <leader>f
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>ff :FufFile<cr>
-map <leader>fc :FufCoverageFile<cr>
-map <leader>fb :FufBuffer<cr>
+map <leader>fc :CommandT<cr>
+map <leader>fb :CommandTBuffer<cr>
 nnoremap <leader><leader> <C-^>
 nnoremap <leader>ww <C-w><C-w>
 nnoremap <leader>wv <C-w><C-v>
 nnoremap <leader>wh :split<cr>
 nnoremap <leader>n <C-n>
+nnoremap <leader>t :tnext<cr>
 
 nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
-
