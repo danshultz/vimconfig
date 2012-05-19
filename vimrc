@@ -9,9 +9,6 @@ call pathogen#helptags()
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
 
-inoremap jk <esc>
-inoremap kj <esc>
-
 let mapleader=","
 
 " Minibuffer Explorer Settings
@@ -131,3 +128,12 @@ nnoremap <leader>n <C-n>
 nnoremap <leader>t :tnext<cr>
 
 nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
+
+"set pastetoggle=<leader>v     "turn paste mode on and off with <leader>v
+imap <leader>v <C-O>:set paste<CR><C-r>*<C-O>:set nopaste<CR>
+au! BufNewFile,BufRead *.coffee setf coffee
+au! BufNewFile,BufRead Cakefile setf coffee
+au! BufNewFile,BufRead *.mustache setf html
+au! BufNewFile,BufRead *.json setf javascript
+au! BufNewFile,BufRead *.eco setf html
+
