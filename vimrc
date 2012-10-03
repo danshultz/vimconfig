@@ -126,6 +126,8 @@ nnoremap <leader>wv <C-w><C-v>
 nnoremap <leader>wh :split<cr>
 nnoremap <leader>n <C-n>
 nnoremap <leader>t :tnext<cr>
+map <leader>2t :set tabstop=2 shiftwidth=2 softtabstop=2<cr>
+map <leader>4t :set tabstop=4 shiftwidth=4 softtabstop=4<cr>
 
 nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
 
