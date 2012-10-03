@@ -136,4 +136,5 @@ au! BufNewFile,BufRead Cakefile setf coffee
 au! BufNewFile,BufRead *.mustache setf html
 au! BufNewFile,BufRead *.json setf javascript
 au! BufNewFile,BufRead *.eco setf html
+au! BufNewFile,BufRead *.jade setf jade
 
