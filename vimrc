@@ -117,6 +117,7 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 
 " Open files with <leader>f
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+let g:fuf_file_exclude = '\v\~$|\.(pyo|pyc|o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 map <leader>ff :FufFile<cr>
 map <leader>fc :CommandT<cr>
 map <leader>fb :CommandTBuffer<cr>
