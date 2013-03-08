@@ -42,6 +42,11 @@ set laststatus=2
 set showmatch
 set incsearch
 
+" set colum width bar
+set colorcolumn=80
+highlight ColorColumn ctermbg=gray ctermfg=black
+
+set ruler
 set hls
 
 " prevent creation of *~ and .swp files
