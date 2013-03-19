@@ -6,5 +6,4 @@ In order to use the vim-ruby gem to it's fullest potential vim needs to be insta
 * After cloning cd into directory and run ```git submodule init && git submodule update```
 * run ```ln -s ~/dev/vimconfig/ ~/.vim```
 * run ```ln -s ~/dev/vimconfig/vimrc ~/.vimrc```
-
-
+* run ```cd ~/.vim/bundle/command-t && rake make && cd -``` to enabled command-t
