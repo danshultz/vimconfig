@@ -44,7 +44,6 @@ set incsearch
 
 " set colum width bar
 set colorcolumn=80
-highlight ColorColumn ctermbg=gray ctermfg=black
 
 set ruler
 set hls
@@ -146,3 +145,4 @@ au! BufNewFile,BufRead *.json setf javascript
 au! BufNewFile,BufRead *.eco setf html
 au! BufNewFile,BufRead *.jade setf jade
 
+highlight ColorColumn ctermbg=gray ctermfg=black
