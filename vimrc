@@ -146,3 +146,10 @@ au! BufNewFile,BufRead *.eco setf html
 au! BufNewFile,BufRead *.jade setf jade
 
 highlight ColorColumn ctermbg=gray ctermfg=black
+
+" Show trailing whitespace:
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" Strip trailing whitespace on save
+autocmd BufWritePre *.py :%s/\s\+$//e
