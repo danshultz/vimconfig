@@ -43,7 +43,7 @@ set showmatch
 set incsearch
 
 " set colum width bar
-set colorcolumn=80
+set colorcolumn=81
 
 set ruler
 set hls
