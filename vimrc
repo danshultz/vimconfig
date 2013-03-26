@@ -16,14 +16,14 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
- 
+
 " alt+n or alt+p to navigate between entries in QuickFix
 map <silent> <m-p> :cp <cr>
 map <silent> <m-n> :cn <cr>
- 
+
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
- 
+
 syntax on
 " Keep more context when scrolling off the end of a buffer
 set scrolloff=3
@@ -152,4 +152,4 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 " Strip trailing whitespace on save
-autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.rb,*.py :%s/\s\+$//e
