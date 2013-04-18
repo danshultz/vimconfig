@@ -144,6 +144,7 @@ au! BufNewFile,BufRead *.mustache setf html
 au! BufNewFile,BufRead *.json setf javascript
 au! BufNewFile,BufRead *.eco setf html
 au! BufNewFile,BufRead *.jade setf jade
+au! BufNewFile,BufRead *.handlebars setf handlebars
 
 highlight ColorColumn ctermbg=gray ctermfg=black
 
