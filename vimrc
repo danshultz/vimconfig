@@ -3,7 +3,7 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set nocompatible  " We don't want vi compatibility.
 
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 
 " Add recently accessed projects menu (project plugin)
