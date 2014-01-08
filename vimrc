@@ -122,22 +122,22 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 " Open files with <leader>f
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 let g:fuf_file_exclude = '\v\~$|\.(pyo|pyc|o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-map <leader>ff :FufFile<cr>
-map <leader>fc :CommandT<cr>
-map <leader>fb :CommandTBuffer<cr>
+nmap <leader>ff :FufFile<cr>
+nmap <leader>fc :CommandT<cr>
+nmap <leader>fb :CommandTBuffer<cr>
 nnoremap <leader><leader> <C-^>
 nnoremap <leader>ww <C-w><C-w>
 nnoremap <leader>wv <C-w><C-v>
 nnoremap <leader>wh :split<cr>
 nnoremap <leader>n <C-n>
 nnoremap <leader>t :tnext<cr>
-map <leader>2t :set tabstop=2 shiftwidth=2 softtabstop=2<cr>
-map <leader>4t :set tabstop=4 shiftwidth=4 softtabstop=4<cr>
+nmap <leader>2t :set tabstop=2 shiftwidth=2 softtabstop=2<cr>
+nmap <leader>4t :set tabstop=4 shiftwidth=4 softtabstop=4<cr>
 
 nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
 
 "set pastetoggle=<leader>v     "turn paste mode on and off with <leader>v
-imap <leader>v <C-O>:set paste<CR><C-r>*<C-O>:set nopaste<CR>
+"imap <leader>v <C-O>:set paste<CR><C-r>*<C-O>:set nopaste<CR>
 au! BufNewFile,BufRead *.coffee setf coffee
 au! BufNewFile,BufRead Cakefile setf coffee
 au! BufNewFile,BufRead *.mustache setf html
@@ -153,4 +153,4 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 " Strip trailing whitespace on save
-autocmd BufWritePre *.rb,*.py :%s/\s\+$//e
+autocmd BufWritePre *.rb,*.py,*.js,*.coffee :%s/\s\+$//e
