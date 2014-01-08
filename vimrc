@@ -145,6 +145,8 @@ au! BufNewFile,BufRead *.json setf javascript
 au! BufNewFile,BufRead *.eco setf html
 au! BufNewFile,BufRead *.jade setf jade
 au! BufNewFile,BufRead *.handlebars setf handlebars
+au! BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au! FileType elixir setl sw=2 sts=2 et iskeyword+=!,?
 
 highlight ColorColumn ctermbg=gray ctermfg=black
 
