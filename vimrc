@@ -156,3 +156,9 @@ match ExtraWhitespace /\s\+$/
 
 " Strip trailing whitespace on save
 autocmd BufWritePre *.rb,*.py,*.js,*.coffee :%s/\s\+$//e
+
+let g:syntastic_mode_map = {
+      \ 'mode': 'active',
+      \ 'active_filetypes': [],
+      \ 'passive_filetypes': ['puppet'] }
+
