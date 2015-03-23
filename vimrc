@@ -5,6 +5,7 @@ set nocompatible  " We don't want vi compatibility.
 
 call pathogen#incubate()
 call pathogen#helptags()
+execute pathogen#infect()
 
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
@@ -121,6 +122,7 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 
 " Open files with <leader>f
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+set wildignore+=bower_components/**,node_modules/**,tmp/**
 let g:fuf_file_exclude = '\v\~$|\.(pyo|pyc|o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 nmap <leader>ff :FufFile<cr>
 nmap <leader>fc :CommandT<cr>
@@ -140,12 +142,14 @@ nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
 "imap <leader>v <C-O>:set paste<CR><C-r>*<C-O>:set nopaste<CR>
 au! BufNewFile,BufRead *.coffee setf coffee
 au! BufNewFile,BufRead Cakefile setf coffee
-au! BufNewFile,BufRead *.mustache setf html
+"au! BufNewFile,BufRead *.mustache setf html
 au! BufNewFile,BufRead *.json setf javascript
 au! BufNewFile,BufRead *.eco setf html
 au! BufNewFile,BufRead *.jade setf jade
-au! BufNewFile,BufRead *.handlebars setf handlebars
+au! BufNewFile,BufRead *.hbs,*.handlebars set filetype=handlebars
+au! BufNewFile,BufRead *.jbuilder set filetype=ruby
 au! BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au! BufRead,BufNewFile *.go, set noexpandtab
 au! FileType elixir setl sw=2 sts=2 et iskeyword+=!,?
 
 highlight ColorColumn ctermbg=gray ctermfg=black
@@ -155,10 +159,11 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 " Strip trailing whitespace on save
-autocmd BufWritePre *.rb,*.py,*.js,*.coffee :%s/\s\+$//e
+autocmd BufWritePre *.rb,*.py,*.js,*.coffee,*.go :%s/\s\+$//e
 
 let g:syntastic_mode_map = {
       \ 'mode': 'active',
       \ 'active_filetypes': [],
       \ 'passive_filetypes': ['puppet'] }
 
+let g:syntastic_python_pep8_args = '--max-line-length=160'
