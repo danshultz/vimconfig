@@ -4,9 +4,6 @@
 [submodule "bundle/FuzzyFinder"]
 	path = bundle/FuzzyFinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule "bundle/cucumber"]
 	path = bundle/cucumber
 	url = https://github.com/tpope/vim-cucumber.git
@@ -40,12 +37,18 @@
 [submodule "bundle/handlebars"]
 	path = bundle/handlebars
 	url = git@github.com:nono/vim-handlebars.git
-[submodule "bundle/CoVim"]
-	path = bundle/CoVim
-	url = git@github.com:FredKSchott/CoVim.git
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
 [submodule "bundle/vim-puppet"]
 	path = bundle/vim-puppet
 	url = https://github.com/puppetlabs/puppet-syntax-vim
+[submodule "bundle/less"]
+	path = bundle/less
+	url = git@github.com:groenewege/vim-less.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = git@github.com:editorconfig/editorconfig-vim.git
