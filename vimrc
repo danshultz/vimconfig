@@ -167,3 +167,4 @@ let g:syntastic_mode_map = {
       \ 'passive_filetypes': ['puppet'] }
 
 let g:syntastic_python_pep8_args = '--max-line-length=160'
+let g:syntastic_javascript_checkers = ['eslint', 'jshint']
