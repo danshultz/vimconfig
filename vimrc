@@ -150,6 +150,7 @@ au! BufNewFile,BufRead *.hbs,*.handlebars set filetype=handlebars
 au! BufNewFile,BufRead *.jbuilder set filetype=ruby
 au! BufRead,BufNewFile *.ex,*.exs set filetype=elixir
 au! BufRead,BufNewFile *.go, set noexpandtab
+au! BufRead,BufNewFile *.groovy, set noexpandtab
 au! FileType elixir setl sw=2 sts=2 et iskeyword+=!,?
 
 highlight ColorColumn ctermbg=gray ctermfg=black
@@ -159,7 +160,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 " Strip trailing whitespace on save
-autocmd BufWritePre *.rb,*.py,*.js,*.coffee,*.go :%s/\s\+$//e
+autocmd BufWritePre *.rb,*.py,*.js,*.coffee,*.go,*.scss,*.css :%s/\s\+$//e
 
 let g:syntastic_mode_map = {
       \ 'mode': 'active',
