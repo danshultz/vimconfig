@@ -123,9 +123,10 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 " map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 set wildignore+=bower_components/**,node_modules/**,tmp/**
 let g:fuf_file_exclude = '\v\~$|\.(pyo|pyc|o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nmap <leader>ff :FufFile<cr>
-nmap <leader>fc :CommandT<cr>
-nmap <leader>fb :CommandTBuffer<cr>
+nmap <leader>fc :CtrlP<cr>
+nmap <leader>fb :CtrlPBuffer<cr>
 nnoremap <leader><leader> <C-^>
 nnoremap <leader>ww <C-w><C-w>
 nnoremap <leader>wv <C-w><C-v>
