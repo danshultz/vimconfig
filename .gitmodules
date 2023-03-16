@@ -10,9 +10,6 @@
 [submodule "bundle/vim-l9"]
 	path = bundle/vim-l9
 	url = https://github.com/slack/vim-l9.git
-[submodule "bundle/ColorSamplePack"]
-	path = bundle/ColorSamplePack
-	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
@@ -49,3 +46,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "bundle/ColorSamplePack"]
+	path = bundle/ColorSamplePack
+	url = git@github.com:vim-scripts/Colour-Sampler-Pack.git
