@@ -4,9 +4,6 @@
 [submodule "bundle/FuzzyFinder"]
 	path = bundle/FuzzyFinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
-[submodule "bundle/cucumber"]
-	path = bundle/cucumber
-	url = https://github.com/tpope/vim-cucumber.git
 [submodule "bundle/vim-l9"]
 	path = bundle/vim-l9
 	url = https://github.com/slack/vim-l9.git
@@ -16,15 +13,9 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/handlebars"]
-	path = bundle/handlebars
-	url = git@github.com:nono/vim-handlebars.git
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
-[submodule "bundle/less"]
-	path = bundle/less
-	url = git@github.com:groenewege/vim-less.git
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = git@github.com:mattn/emmet-vim.git
@@ -49,3 +40,9 @@
 [submodule "bundle/ColorSamplePack"]
 	path = bundle/ColorSamplePack
 	url = git@github.com:vim-scripts/Colour-Sampler-Pack.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "bundle/vim-jsx-typescript"]
+	path = bundle/vim-jsx-typescript
+	url = git@github.com:peitalin/vim-jsx-typescript.git

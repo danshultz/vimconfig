@@ -6,6 +6,34 @@ set nocompatible  " We don't want vi compatibility.
 call pathogen#helptags()
 execute pathogen#infect('bundle/{}')
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
 
@@ -140,14 +168,7 @@ nnoremap <S-Tab> :bnext<cr>:redraw<cr>:ls<cr>
 
 "set pastetoggle=<leader>v     "turn paste mode on and off with <leader>v
 "imap <leader>v <C-O>:set paste<CR><C-r>*<C-O>:set nopaste<CR>
-au! BufNewFile,BufRead *.coffee setf coffee
-au! BufNewFile,BufRead Cakefile setf coffee
-"au! BufNewFile,BufRead *.mustache setf html
 au! BufNewFile,BufRead *.json setf javascript
-au! BufNewFile,BufRead *.eco setf html
-au! BufNewFile,BufRead *.jade setf jade
-au! BufNewFile,BufRead *.hbs,*.handlebars set filetype=handlebars
-au! BufNewFile,BufRead *.jbuilder set filetype=ruby
 au! BufRead,BufNewFile *.ex,*.exs set filetype=elixir
 au! BufRead,BufNewFile *.go, set noexpandtab
 au! BufRead,BufNewFile *.groovy, set noexpandtab
